@@ -1,4 +1,5 @@
 # geodreams
 
 ## First Dream 
-![image](firstdream/images/firstdream2.eps)
+![image](https://raw.githubusercontent.com/mewilson/geodreams/master/firstdream/images/firstdream1.png)
+
