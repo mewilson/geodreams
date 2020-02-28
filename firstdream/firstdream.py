@@ -6,13 +6,16 @@ def wind_mill(center_x, center_y, color = "black"):
     t.setpos(center_x, center_y)
     t.pd()
     
-    t.pencolor(color)
+    # t.pencolor(color)
+    t.begin_fill()
 
     for i in range(4):
         t.fd(30)
         t.lt(90)
         t.fd(40)
         t.setpos(center_x, center_y)
+
+    t.end_fill()
 
 def row_left(function, center_x, center_y, first_value, second_value, colors, n):
 
@@ -53,11 +56,24 @@ def main():
     # coord_center(wind_mill, 30, 40)
 
     colors = ["red", "orange", "green", "blue", "purple"]
-    row(wind_mill, 0, 0, 60, 40, colors, 4)
-    row(wind_mill, -40, 60, 60, 40, colors, 4)
+    colors = ["black", "black", "black", "black", "black"]
+
+    recursion_const = 4
+    
+    
+
+    row(wind_mill, 0, 0, 60, 40, colors, recursion_const)
+
+    
+    for i in range(1, 4):
+        row(wind_mill, i * 40, i * -60, 60, 40, colors, recursion_const) # Downward
+        row(wind_mill, i * -40, i * 60, 60, 40, colors, recursion_const) # Upward
+
     
     #dynamic_center(60, 40, 60, 40)
     #wind_mill(60, 40)
+
+    t.getscreen().getcanvas().postscript(file = "firstdream2.eps")
     
     
 
