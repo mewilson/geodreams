@@ -1,5 +1,5 @@
 # geodreams
 
-## First Dream 
-![image](https://raw.githubusercontent.com/mewilson/geodreams/master/firstdream/images/firstdream1.png)
+## 4 Point Dream 
+![image](https://raw.githubusercontent.com/mewilson/geodreams/master/dreams/thirddream/images/4points.png)
 
