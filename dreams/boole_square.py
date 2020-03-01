@@ -1,6 +1,10 @@
 import turtle as t
 import modules.geolib as geolib
 import numpy as np
+import time
+
+# GLOBAL VARIABLES
+video = False
 
 def v(x, y):
     return t.Vec2D(x, y)
@@ -42,9 +46,14 @@ def main():
 
     agents = [upperRight, lowerRight, lowerLeft, upperLeft]
     
+
+    if video : time.sleep(5)
+    
     # Hide all agents and set their speed.
     geolib.hide_all(agents)
-    geolib.set_speed(agents)
+    geolib.set_speed(agents, "normal")
+    
+    if video : time.sleep(20)
     
     # Draw the figure.
     make_gradients(agents, 300, 300, 30)
