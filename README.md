@@ -1,5 +1,6 @@
 # geodreams
 
-## 4 Point Dream 
-![image](https://raw.githubusercontent.com/mewilson/geodreams/master/dreams/thirddream/images/4points.png)
+## GN Wiki
+![image](https://raw.githubusercontent.com/mewilson/geodreams/master/dreams/bounded/images/multibound.png)
+
 
